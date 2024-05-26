@@ -114,8 +114,8 @@
           progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
-          // var userId = getUrlParameter('userid');
-
+          var userId = getUrlParameter('userid');
+        alert(userId);
             unityInstance.SendMessage('GameManager', 'SetUsername', "1839588386");
        
                 fullscreenButton.onclick = () => {
